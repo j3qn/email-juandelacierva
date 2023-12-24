@@ -40,4 +40,7 @@ PDS: tambien se puede filtar solamente usuarios de Profesor mediante el siguient
 <tr[^>]*id="user-index-participants-1269_r\\d+"[^>]*>.*?<td[^>]*id="user-index-participants-1269_r\\d+_c2"[^>]*>(.*?)<\/td>.*?<\/tr>`, 'i')`
 ```
 
+Ejemplo de uso:
+<img src="https://cdn.discordapp.com/attachments/784790155042750464/1188517577215971363/dic.png?ex=659ad03f&is=65885b3f&hm=3ae2db61a164ec058d756565f9e31db6814f9695bad258a95836119b04b21a9f&">
+
 ultima actualizacion: **24/12/2023**
