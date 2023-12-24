@@ -35,4 +35,9 @@ y para el regex del correo
 Y ya, eso es todo :D
 (una manera de evitar este webscrapping es setear las tables con ids aleatorias mediante un script antes del que el DOM cargue)
 
+PDS: tambien se puede filtar solamente usuarios de Profesor mediante el siguiente regex
+```
+<tr[^>]*id="user-index-participants-1269_r\\d+"[^>]*>.*?<td[^>]*id="user-index-participants-1269_r\\d+_c2"[^>]*>(.*?)<\/td>.*?<\/tr>`, 'i')`
+```
+
 ultima actualizacion: **24/12/2023**
