@@ -11,7 +11,8 @@ fetch(window.location.href, {
         "sec-fetch-site": "same-origin",
         "sec-fetch-user": "?1",
         "upgrade-insecure-requests": "1",
-        "cookie": "MoodleSessionu28020910=nlo69cecikurjmme9h5o8o7gut; MOODLEID1_u28020910=d%25E7%25E9%2582%25DF%25DB; EducaMadrid_LSSI_Cookies=2; UqZBpD3n=v1vdCGSQ__eDD",
+        "cookie": document.cookie,
+        "Referer": "https://aulavirtual33.educa.madrid.org/ies.juandelacierva.madrid/course/view.php?id=160",
         "Referrer-Policy": "strict-origin-when-cross-origin"
     },
     "body": null,
@@ -32,13 +33,15 @@ fetch(window.location.href, {
         });
         console.log(ids);
 
+        
+
 
 
         ids.forEach(function (id) {
             var userId = id.replace("user", "");
             fetch(`https://aulavirtual33.educa.madrid.org/ies.juandelacierva.madrid/user/profile.php?id=${userId}`, {
                 "headers": {
-                    "cookie": "MoodleSessionu28020910=nlo69cecikurjmme9h5o8o7gut; MOODLEID1_u28020910=d%25E7%25E9%2581%25DF%25DB; EducaMadrid_LSSI_Cookies=2; UqZBpD3n=v1vdCGSQ__eDD",
+                    "cookie": document.cookie,
 
                 },
                 "body": null,
